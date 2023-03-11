@@ -4,6 +4,7 @@ import util_class
 from tools import GAMEPLAY
 
 pygame.init()
+pygame.display.set_caption('München-Snake')
 
 img_apple = pygame.image.load('images/kirche.bmp')
 img_head = pygame.image.load('images/muenchen.bmp')

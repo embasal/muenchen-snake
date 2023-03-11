@@ -101,8 +101,3 @@ class GAMEPLAY(object):
         pygame.draw.lines(self.screen, self.colors['black'], False,
                           [(0, self.screen_size[1] - width), (self.screen_size[0], self.screen_size[1] - width)], 1)
         self.screen.blit(score_text[0], (1, self.screen_size[1] - width + 1))
-
-        level_text = self.text_obj("Level {0}".format(level),
-                                   self.colors['black'], 'medium')
-        self.screen.blit(level_text[0],
-                         (self.screen_size[0] - level_text[1][2], self.screen_size[1] - width + 1))
